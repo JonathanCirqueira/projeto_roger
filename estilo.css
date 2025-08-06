@@ -1,0 +1,228 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "Android";
+  src: url("../fontes/IDroid.otf") format("opentype");
+  font-weight: normal;
+}
+
+:root {
+  --fonte-android: "Android", sans-serif;
+  --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+  --fonte-destaque: "Bebas Neue", "Android", sans-serif;
+  /* Removido ---font-robot */
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  font-family: var(--fonte-padrao);
+  background-color: grey;
+  width: 100%;
+}
+
+h1 {
+  color: #fdfdfd;
+  text-align: center;
+  text-shadow: 1px 1px black;
+  font-family: var(--fonte-android);
+}
+
+h2 {
+  color: #474b47;
+  text-align: center;
+  text-shadow: 1px 1px black;
+  font-family: var(--fonte-android);
+  font-size: 2em;
+  background-image: linear-gradient(to right, #07ff41, transparent);
+}
+
+h3 {
+  color: #646a65;
+  text-align: center;
+  text-shadow: 1px 1px black;
+  font-family: var(--fonte-android);
+  font-size: 2em;
+}
+
+p {
+    text-align: center; 
+    margin: 15px 0;
+    margin-bottom: 0px;
+  }
+  
+  #button {
+    background-color: #007BFF;
+    color: white;
+    font-size: 15px;
+    padding: 10px 20px;
+   
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  #button:hover {
+    background-color: #0056b3;
+  }
+  
+  #button:active {
+    transform: scale(0.95); 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); 
+  }
+
+#ano {
+  color: black;
+}
+
+nav {
+  display: inline-block;
+}
+nav > a {
+  color: rgb(74, 82, 74);
+  padding: 5px;
+  border-radius: 5px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  transition-duration: 1s;
+}
+
+nav > a:hover {
+  background-color: #535853;
+  font-family: var(--fonte-android);
+}
+
+img {
+  width: 100%;
+}
+video {
+  width: 100%;
+  display: contents;
+}
+
+main img.pequeno {
+  max-width: 350px;
+  display: block;
+  margin: auto;
+}
+
+li {
+  color: rgb(71, 73, 72);
+}
+
+header > h1 {
+  font-size: 34px;
+  margin-bottom: 0px;
+ 
+}
+
+main a {
+  color: rgb(97, 100, 97);
+  padding: 5px;
+  border-radius: 5px;
+  border-radius: 4px;
+  text-decoration: underline;
+  font-weight: bold;
+  transition-duration: 1s;
+}
+
+main a:hover {
+  text-decoration: underline;
+  font-size: 16.5px;
+  background-color: #5d5e5d;
+  font-family: var(--fonte-android);
+}
+
+aside > h3 {
+  background-color: #5d5f5e;
+  color: white;
+  padding: 10px;
+  margin: -10px -10px 0px -10px;
+  border-radius: 20px 20px 0px 0px;
+}
+
+aside {
+  background-color: #464d46;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.297);
+}
+
+aside > ul {
+  list-style-type: "\2714\00A0\00A0";
+  list-style-position: inside;
+  columns: 2;
+  text-align: justify;
+}
+
+div.video {
+  background-color: #4a524e;
+  margin: 0px -20px 30px -20px;
+  padding: 20px;
+  padding-bottom: 50%;
+  position: relative;
+}
+
+div.video > iframe {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 90%;
+  height: 90%;
+}
+#sexo {
+  color: rgb(0, 0, 0);
+}
+
+
+#Sexo_masculino {
+  color: black;
+}
+
+#Sexo_feminino {
+  color: black;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 0px#0000002f;
+  margin: auto;
+  margin-bottom: 30px;
+  margin-right: 16px;
+  max-width: 750px;
+}
+
+@media (min-width: 769px) {
+  section {
+    max-width: auto;
+    margin: 30px auto; /* Centraliza horizontalmente */
+  }
+}
+
+footer {
+  text-align: center;
+  height: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#foto {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-top: 10px;
+}
+/* ...continua como já estava */
